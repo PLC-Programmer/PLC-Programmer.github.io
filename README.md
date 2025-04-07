@@ -6,7 +6,7 @@ Links:
 
 - **(0) Glossary, symbols and names**:
 
-https://google.com
+<a href="https://google.com"> Google </a>
 
 <br/>
 
