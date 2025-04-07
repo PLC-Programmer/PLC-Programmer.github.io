@@ -3,7 +3,11 @@
 2025-04-07: work in progress
 
 Links:
+
 - **(0) Glossary, symbols and names**: https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(0)%20Scala%20glossary.md
+
+
+
 - (A) ... (TBD)
 - (B) ... (TBD)
 - (C) ... (TBD)
