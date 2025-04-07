@@ -4,15 +4,7 @@
 
 Links:
 
-- **(0) Glossary, symbols and names**:
-
-<a href="https://google.com"> Google </a>
-
-<br/>
-
-<a href="https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(0)%20Scala%20glossary.md" onclick="window.open('https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(0)%20Scala%20glossary.md', '_self');">
-
-<br/>
+- **(0) Glossary, symbols and names**: https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(0)%20Scala%20glossary.md
 
 - (A) ... (TBD)
 - (B) ... (TBD)
