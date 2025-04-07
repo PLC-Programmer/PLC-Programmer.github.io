@@ -4,13 +4,19 @@
 
 Links:
 
-- [(0) Glossary, symbols and names](https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(0)%20Scala%20glossary.md)
-- (A) ... (TBD)
-- (B) ... (TBD)
-- (C) ... (TBD)
-- (D) ... (TBD)
-- (E) ... (TBD)
-- (F) ... (TBD)
+[(0) Glossary, symbols and names](https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(0)%20Scala%20glossary.md)
+
+(A) ... (TBD)
+
+(B) ... (TBD)
+
+(C) ... (TBD)
+
+(D) ... (TBD)
+
+(E) ... (TBD)
+
+(F) ... (TBD)
 
 <br/>
 
@@ -20,7 +26,7 @@ Scala: the last high level, general purpose programming language before AI takes
 
 <br/>
 
-Anyhow, I discovered that making my very first "shippable" Scala applications, with latest Scala version 3, with the official tool called **sbt** (**"simple build tool"**: https://www.scala-sbt.org/) was not easy. It took me numerous trials and errors.
+Anyhow, I discovered that making my very first "shippable" Scala applications, with latest Scala version 3, with the official tool called **sbt** (**"simple build tool"**: [www.scala-sbt.org](https://www.scala-sbt.org/)) was not easy. It took me numerous trials and errors.
 
 Understanding the sbt - at least to some extent - was my **key to understand practical coding with Scala** for more than just printing "Hello World!" to the console.
 
@@ -28,11 +34,11 @@ And it's super-easy to trap into the Scala, sbt, Java version hell and to become
 
 <br/>
 
-In case you don't know: Scala heavily relies on the **Java ecosystem**. However, whenever I was in doubt with one of the numerous third party libraries, I turned to an official and hopefully latest version of a Java or close to Java library. This was one of the better experiences, though the state of the Java ecosystem after all those year since 1996(!) appears strange to me: https://www.geeksforgeeks.org/the-complete-history-of-java-programming-language/
+In case you don't know: Scala heavily relies on the **Java ecosystem**. However, whenever I was in doubt with one of the numerous third party libraries, I turned to an official and hopefully latest version of a Java or close to Java library. This was one of the better experiences, though the state of the Java ecosystem after all those year since 1996(!) appears strange to me: [The Complete History of Java Programming Language](https://www.geeksforgeeks.org/the-complete-history-of-java-programming-language/)
 
 I fought a lot with successfully **importing and using libraries** into my first, little scala source code files (~.scala). But I think I'm on a way to somehow master this challenge.
 
-Just the week before, I've built successfully my first little Go (from Google) program: https://go.dev/ -- even with a version where I tested - also successfully - the famous and so called "goroutines".
+Just the week before, I've built successfully my first little Go (from Google) program: [Build simple, secure, scalable systems with Go](https://go.dev/) -- even with a version where I tested - also successfully - the famous and so called "goroutines".
 
 This was a very positive experience, though I heard good things about Go before. I could concentrate on coding instead of fighting with the ecosystem.
 
@@ -46,13 +52,13 @@ However, after elaborate experimentations I "cracked the code"!! After this, I c
 
 <br/>
 
-Throughout my Scala journey so far, I discovered the first "dead" part of the Scala ecosystem, here a libary called "breeze" for mathematical functions (with Scala and Java these are not part of the standard libraries): https://github.com/scalanlp/breeze
+Throughout my Scala journey so far, I discovered the first "dead" part of the Scala ecosystem, here a libary called "breeze" for mathematical functions (with Scala and Java these are not part of the standard libraries): [scalanlp / breeze](https://github.com/scalanlp/breeze)
 
-I only needed something to calculate the (sample) mean and (sample) standard deviation of a set of numbers. Finally, I turned successfully to this library: https://commons.apache.org/proper/commons-math/
+I only needed something to calculate the (sample) mean and (sample) standard deviation of a set of numbers. Finally, I turned successfully to this library: [Commons Math: The Apache Commons Mathematics Library](https://commons.apache.org/proper/commons-math/)
 
 But boy, can't this age-old library have an inbuilt function for standard deviation?!?
 
-Instead, one has first to use the function for variance and then take the square root: https://commons.apache.org/proper/commons-math/userguide/stat.html
+Instead, one has first to use the function for variance and then take the square root: [1 Statistics](https://commons.apache.org/proper/commons-math/userguide/stat.html)
 
 ```
 import org.apache.commons.math3.stat.StatUtils  // StatUtils.mean, StatUtils.variance
@@ -85,9 +91,9 @@ Of course, it's never a good sign when a language specific library, which was un
 
 From my point of view it would be a real pittly if the Scala programming language, just after the boost of the major step forward with the version 3, starting around 2019/2020, becomes less and less used in the "real world":
 
-https://docs.scala-lang.org/scala3/new-in-scala3.html: "Scala 3 is a complete overhaul of the Scala language." 
+[New in Scala 3](https://docs.scala-lang.org/scala3/new-in-scala3.html)
 
-2021-02-17: https://dotty.epfl.ch/blog/2021/02/17/scala3-rc1.html: "Scala 3.0.0-RC1 – first release candidate is here"
+2021-02-17: [Scala 3.0.0-RC1 – first release candidate is here](https://dotty.epfl.ch/blog/2021/02/17/scala3-rc1.html)
 
 
 ##_end
