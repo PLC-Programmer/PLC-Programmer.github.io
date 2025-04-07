@@ -6,6 +6,8 @@ Links:
 
 - **(0) Glossary, symbols and names**:
 
+https://google.com
+
 <br/>
 
 <a href="https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(0)%20Scala%20glossary.md" onclick="window.open('https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(0)%20Scala%20glossary.md', '_self');">
