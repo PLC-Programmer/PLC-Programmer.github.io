@@ -2,6 +2,17 @@
 
 2025-04-07: work in progress
 
+Links:
+- **(0) Glossary, symbols and names**: https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(0)%20Scala%20glossary.md
+- (A) ... (TBD)
+- (B) ... (TBD)
+- (C) ... (TBD)
+- (D) ... (TBD)
+- (E) ... (TBD)
+- (F) ... (TBD)
+
+<br/>
+
 # Intro
 
 Scala: the last high level, general purpose programming language before AI takes over programming?
