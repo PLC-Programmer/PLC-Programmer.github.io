@@ -40,7 +40,7 @@ I fought a lot with successfully **importing and using libraries** into my first
 
 Just the week before, I've built successfully my first little Go (from Google) program: [Build simple, secure, scalable systems with Go](https://go.dev/) -- even with a version where I tested - also successfully - the famous and so called "goroutines".
 
-This was a very positive experience, though I heard good things about Go before. I could concentrate on coding instead of fighting with the ecosystem.
+This was a very positive experience, though I read good things about Go before. I could concentrate on coding instead of fighting with the ecosystem.
 
 Well, this is apparently the difference between a programming language from a multi billion dollar company or something else.
 
