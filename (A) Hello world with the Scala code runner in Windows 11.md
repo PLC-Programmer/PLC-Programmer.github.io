@@ -1,7 +1,5 @@
 2025-04-08: work in progress
 
-<br/>
-
 # Installations in Windows 11
 
 Some notes on Scala installations for Windows 11. Install these components if not done yet:
@@ -26,8 +24,6 @@ _C:\Users\...\AppData\Local\Coursier\data\bin_  (where did this come from?)
 
 The installation process of the winget command is looking for a installed JVM on your Windows computer. I cannot say if one has to manually install the JDK for Windows, if no installed JVM was found: https://docs.oracle.com/en/java/javase/index.html
 
-<br/>
-
 #### b/ JDK and JVM
 
 I've JDK version 23 installed on my PC: https://docs.oracle.com/en/java/javase/23/install/overview-jdk-installation.html
@@ -42,13 +38,9 @@ _C:\Program Files (x86)\Common Files\Oracle\Java\java8path_
 
 _C:\Program Files (x86)\Common Files\Oracle\Java\javapath_
 
-<br/>
-
 #### c/ sbt
 
 https://www.scala-sbt.org/download/: I think downloading and installing the _sbt-1.10.11.msi_ file is a good choice.
-
-<br/>
 
 #### d/ C/C++ compiler for Scala native
 
