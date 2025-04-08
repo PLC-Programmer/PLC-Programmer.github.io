@@ -10,7 +10,7 @@ See https://scala-cli.virtuslab.org/install/
 
 As described in this document, run in a Windows termninal ("cmd.exe") this command: _> winget install virtuslab.scalacli_
 
-When running Scala tools the first time in a Windows terminal, expect more downloads and installations, like these commands:
+When running Scala tools the first time in a Windows terminal, expect more downloads and installations, like with these commands:
 
 _\> scala-cli_
 
@@ -18,43 +18,61 @@ _Welcome to Scala 3.6.4 (17.0.14, Java OpenJDK 64-Bit Server VM)._
 
 _Type in expressions for evaluation. Or try :help._
 
-_scala>_
- 
+_scala>_  # the Scala command prompt; type _:exit_ to leave it
+
 <br/>
 
-_\> scala <name of a Scala source code file>_
+_\> scala_
 
-_Starting compilation server_
+_Welcome to Scala 3.6.4 (17.0.14, Java OpenJDK 64-Bit Server VM)._
 
-_Compiling project (Scala 3.6.4, JVM (17))_
+_Type in expressions for evaluation. Or try :help._
 
-_Compiled project (Scala 3.6.4, JVM (17))_
+_scala>_
 
-_Hello, world!_
-
+(the same output)
+ 
 <br/>
 
 Also make sure that these scala tools can be found in your Windows _PATH_ environment variable, for example like this:
 
 _C:\Program Files\scala-cli-x86_64-pc-win32_
 
-_C:\Users\...\AppData\Local\Coursier\data\bin_  (where did this come from?)
+<br/>
 
-The installation process of the winget command is looking for a installed JVM on your Windows computer. I cannot say if one has to manually install the JDK for Windows, if no installed JVM was found: https://docs.oracle.com/en/java/javase/index.html
+_C:\Users\...\AppData\Local\Coursier\data\bin_  -- this path came with the Scala installer for Windows based on Coursier: _cs-x86_64-pc-win32.exe_ from here: https://docs.scala-lang.org/getting-started/index.html#using-the-scala-installer-recommended-way
 
-#### b/ JDK and JVM
+I just installed this too.
 
-I've JDK version 23 installed on my PC (see outputs above). But I think the exact version doesn't really matter at this point. So, the latest JDK version 24 should also work: https://docs.oracle.com/en/java/javase/24/index.html
+#### b/ Java Runtime Environment (JRE)
 
-I have these paths included in my Windows _PATH_ environment variable:
+The installation process of the winget command is looking for an installed JVM on your Windows computer.
 
-_C:\Program Files\Common Files\Oracle\Java\javapath_
+If a JRE (something like "Java 8 Update...") ist not yet existing on your computer, install it from here: https://www.java.com/en/download/manual.jsp
+
+I took the "Windows Offline (64-bit)" _jre-8u441-windows-x64.exe_ installation file:
+
+![plot](https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/jre8.png)
+
+Check the presence of Java from a Windows Terminal:
+
+_\> java -version_
+
+_java version "1.8.0_441"_
+
+_Java(TM) SE Runtime Environment (build 1.8.0_441-b07)_
+
+_Java HotSpot(TM) 64-Bit Server VM (build 25.441-b07, mixed mode)_
+
+<br/>
+
+Windows _PATH_ should now include these additional pathes:
 
 _C:\Program Files (x86)\Common Files\Oracle\Java\java8path_
 
 _C:\Program Files (x86)\Common Files\Oracle\Java\javapath_
 
-#### c/ sbt
+#### c/ sbt (simple build tool)
 
 https://www.scala-sbt.org/download/: I think downloading and installing the _sbt-1.10.11.msi_ file is a good choice.
 
@@ -65,6 +83,12 @@ Optional and only needed when building so called "Scala native" app's for Window
 Open a Windows Terminal and test the presence of this compiler like this for example:
 
 _\> cl_
+
+_Microsoft (R) C/C++-Optimierungscompiler Version 19.43.34809 für x64_
+
+_Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten._
+
+...
 
 Again, make sure that the _cl.exe_ file can be found in your _PATH_:
 
