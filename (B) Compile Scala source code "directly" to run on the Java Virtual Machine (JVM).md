@@ -5,11 +5,9 @@
 Again, have a dedicated project (root) directory for this source code file, named _hello_world_for_java.scala_:
 
 ```
-object hello_world_for_java {
-  def main(args: Array[String]): Unit = {
+object hello_world_for_java:
+  def main(args: Array[String]): Unit =
     println("Hello, world for Java!")
-  }
-}
 ```
 
 Compile it on Windows 11 and run it on the JVM like this:
