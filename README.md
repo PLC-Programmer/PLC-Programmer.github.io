@@ -18,6 +18,8 @@ Links:
 
 [(F) My problems with Scala](https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(F)%20My%20problems%20with%20Scala.md)
 
+[(G) Tips for working with sbt (simple build tool)](https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(G)%20Tips%20for%20working%20with%20sbt%20(simple%20build%20tool).md)
+
 <br/>
 
 # Intro
