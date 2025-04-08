@@ -2,7 +2,7 @@
 
 <br/>
 
-# Installations and the first Scala "Hello world" app in Windows 11
+# Installations in Windows 11
 
 Some notes on Scala installations for Windows 11. Install these components if not done yet:
 
