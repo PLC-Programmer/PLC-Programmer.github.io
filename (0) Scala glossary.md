@@ -16,7 +16,9 @@ $ coursier = "cs" = application and artifact manager to install Scala applicatio
 
 ~.jar = Java Archive file
 
-JDK = Java Development Kit; here the OpenJDK: https://openjdk.org/
+(JDK = Java Development Kit)
+
+JRE = Java Runtime Environment: download from here: https://www.java.com/en/download/manual.jsp
 
 js = JavaScript
 
