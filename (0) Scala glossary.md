@@ -30,7 +30,7 @@ nodejs = node.js = open-source JavaScript runtime environment: https://nodejs.or
 
 $ sbt = simple build tool: https://www.scala-sbt.org/
 
-$ scala = Scala code runner tool: https://docs.scala-lang.org/getting-started/index.html
+$ scala = Scala code runner tool: https://docs.scala-lang.org/getting-started/index.html; it acts as a wrapper around the _scalac_ compiler
 
 $ scala-cli = Scala shell, that is a command-line tool to interact with the Scala language: https://scala-cli.virtuslab.org/
 
