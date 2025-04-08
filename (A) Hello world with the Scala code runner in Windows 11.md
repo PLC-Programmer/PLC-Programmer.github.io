@@ -20,6 +20,8 @@ _Type in expressions for evaluation. Or try :help._
 
 _scala>_
  
+<br/>
+
 _\> scala <name of a Scala source code file>_
 
 _Starting compilation server_
@@ -42,7 +44,7 @@ The installation process of the winget command is looking for a installed JVM on
 
 #### b/ JDK and JVM
 
-I've JDK version 17 installed on my PC (see outputs above). But I think the exact version doesn't really matter at this point. So, the latest JDK version 24 should also work: https://docs.oracle.com/en/java/javase/24/index.html
+I've JDK version 23 installed on my PC (see outputs above). But I think the exact version doesn't really matter at this point. So, the latest JDK version 24 should also work: https://docs.oracle.com/en/java/javase/24/index.html
 
 I have these paths included in my Windows _PATH_ environment variable:
 
