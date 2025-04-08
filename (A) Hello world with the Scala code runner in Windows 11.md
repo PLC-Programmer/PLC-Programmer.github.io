@@ -13,8 +13,24 @@ As described in this document, run in a Windows termninal ("cmd.exe") this comma
 When running Scala tools the first time in a Windows terminal, expect more downloads and installations, like these commands:
 
 _\> scala-cli_
+
+_Welcome to Scala 3.6.4 (17.0.14, Java OpenJDK 64-Bit Server VM)._
+
+_Type in expressions for evaluation. Or try :help._
+
+_scala>_
  
 _\> scala <name of a Scala source code file>_
+
+_Starting compilation server_
+
+_Compiling project (Scala 3.6.4, JVM (17))_
+
+_Compiled project (Scala 3.6.4, JVM (17))_
+
+_Hello, world!_
+
+<br/>
 
 Also make sure that these scala tools can be found in your Windows _PATH_ environment variable, for example like this:
 
@@ -26,9 +42,7 @@ The installation process of the winget command is looking for a installed JVM on
 
 #### b/ JDK and JVM
 
-I've JDK version 23 installed on my PC: https://docs.oracle.com/en/java/javase/23/install/overview-jdk-installation.html
-
-But I think the exact version doesn't really matter at this point. So, the latest JDK version 24 should also work: https://docs.oracle.com/en/java/javase/24/index.html
+I've JDK version 17 installed on my PC (see outputs above). But I think the exact version doesn't really matter at this point. So, the latest JDK version 24 should also work: https://docs.oracle.com/en/java/javase/24/index.html
 
 I have these paths included in my Windows _PATH_ environment variable:
 
