@@ -12,6 +12,8 @@ Very often, the same command should work 1:1 in Windows or Linux, or at least ve
 
 ------
 
+bsp = Build Server Protocol: a bsp configuration file (_scala.json_) makes a compiled Scala project also available for other IDEs (Integrated development environments) and build tools, where this file is then to be imported
+
 $ coursier = "cs" = application and artifact manager to install Scala applications and setup your Scala development environment: https://get-coursier.io/, https://get-coursier.io/docs/cli-overview
 
 ~.jar = Java Archive file
