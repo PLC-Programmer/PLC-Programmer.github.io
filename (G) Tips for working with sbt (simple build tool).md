@@ -10,5 +10,6 @@ _scalacOptions ++= Seq("-deprecation", "-feature")_
 
 Seen from here https://alvinalexander.com/scala/scala-sbt-re-run-with-deprecation-feature-message/
 
+<br/>
 
 ##_end
