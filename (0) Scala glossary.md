@@ -32,6 +32,8 @@ LLVM = "Low Level Virtual Machine": you don't need this; in Windows 11 you can u
 
 nodejs = node.js = open-source JavaScript runtime environment: https://nodejs.org/en/
 
+OS = operating system (here Windows or Linux)
+
 $ sbt = simple build tool: https://www.scala-sbt.org/
 
 $ scala = Scala code runner tool: https://docs.scala-lang.org/getting-started/index.html; it acts as a wrapper around the _scalac_ compiler
