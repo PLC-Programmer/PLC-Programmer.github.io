@@ -6,17 +6,17 @@ Links:
 
 [(0) Glossary, symbols and names](https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(0)%20Scala%20glossary.md)
 
-(A) ... (TBD)
+[(A) Hello world with the Scala code runner in Windows 11](https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(A)%20Hello%20world%20with%20the%20Scala%20code%20runner%20in%20Windows%2011.md)
 
-(B) ... (TBD)
+[(B) Compile Scala source code "directly" to run on the Java Virtual Machine (JVM)](https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(B)%20Compile%20Scala%20source%20code%20%22directly%22%20to%20run%20on%20the%20Java%20Virtual%20Machine%20(JVM).md)
 
-(C) ... (TBD)
+[(C) Working with the sbt (simple build tool) for a standalone program ("Scala native")](https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(C)%20Working%20with%20the%20sbt%20(simple%20build%20tool)%20for%20a%20standalone%20program%20(%22Scala%20native%22).md)
 
-(D) ... (TBD)
+[(D) From a Scala program to JavaScript for the web browser](https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(D)%20From%20a%20Scala%20program%20to%20JavaScript%20for%20the%20web%20browser.md)
 
-(E) ... (TBD)
+[(E) From a Scala program to JavaScript for node.js](https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(E)%20From%20a%20Scala%20program%20to%20JavaScript%20for%20node.js.md)
 
-(F) ... (TBD)
+[(F) My problems with Scala](https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(F)%20My%20problems%20with%20Scala.md)
 
 <br/>
 
