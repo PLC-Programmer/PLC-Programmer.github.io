@@ -1,8 +1,11 @@
 2025-04-08: work in progress
 
-# Installations in Windows 11
+Direct jump to [(A) Hello world with the Scala code runner in Windows 11 (and Ubuntu 24 LTS)
+](#a-hello-world-with-the-scala-code-runner-in-windows-11-and-ubuntu-24-lts)
 
-Some notes on Scala installations for Windows 11. Install these components if not done yet:
+## Installations in Windows 11
+
+First some notes on Scala installations for Windows 11. Install these components if not done yet:
 
 #### a/ Scala 3
 
@@ -46,7 +49,7 @@ I just installed this too.
 
 #### b/ Java Runtime Environment (JRE)
 
-The installation process of the winget command is looking for an installed JVM on your Windows computer.
+The installation process of the winget command is looking for an installed JVM on your Windows computer. This also happens when running the Scala installer for Windows based on Coursier (see above).
 
 If a JRE (something like "Java 8 Update...") ist not yet existing on your computer, install it from here: https://www.java.com/en/download/manual.jsp
 
@@ -96,10 +99,90 @@ _C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.348
 
 <br/>
 
-## (A) Hello world with the Scala code runner in Windows 11
+### Another Best Practice: own project (root) directory
 
+Be it in Windows or Linux, best practice is to have a **dedicated directory for every project and for every tool/IDE** you use to make Scala based programs.
 
-(TBD)
+This is specifically true when doing a Scala project with the sbt. There it's quasi essential, because only one Scala source code file with the needed _main_ entry point is allowed in one project.
 
+<br/>
+
+## (A) Hello world with the Scala code runner in Windows 11 (and Ubuntu 24 LTS)
+
+So, first create a project directory (be it in Windows or Linux). I call it _hello_world_for_scala_code_runner_.
+
+Then change into this directory.
+
+In this directory make this Scala source code file, called _hello_world_for_scala_code_runner.scala_:
+
+```
+//> using scala 3.6.4
+@main def helloWorld() = println("Hello, world from the Scala code runner!")
+```
+
+Compile for the JVM:
+_/> scala hello_world_for_scala_code_runner.scala_
+
+_Compiling project (Scala 3.6.4, JVM (17))_
+
+_Compiled project (Scala 3.6.4, JVM (17))_
+
+**_Hello, world from the Scala code runner!_**
+
+We are done! Program works and we all can go home :smiley:
+
+<br/>
+	
+The same for works fine on Ubuntu 24 LTS:
+
+_$ scala hello_world_for_scala_code_runner.scala_
+
+_Starting compilation server_
+
+_Compiling project (Scala 3.6.4, JVM (11))_
+
+_Compiled project (Scala 3.6.4, JVM (11))_
+
+_Hello, world from the Scala code runner!_
+
+_$_
+
+<br/>
+
+_scala_ is also a build tool. After building for _hello_world_for_scala_code_runner.scala_ it created two hidden directories:
+
+_.bsp_
+
+_.scala-build_
+
+_.bsp_ for Build Server Protocol contains file _scala.json_ to make this compiled project also available for other IDEs (Integrated development environments) and build tools. So, at an IDE this file has to be imported.
+
+Directory _.scala-build_ contains these directories for example:
+
+_.bloop_
+
+_hello_world_for_scala_code_runner_148aa65560-66206329de_
+
+..and these files:
+
+_ide-envs.json_
+
+_ide-inputs.json_
+
+_ide-launcher-options.json_
+
+_ide-options-v2.json_
+
+This build makes our Scala program running much faster at the next execution:
+
+_$ scala hello_world_for_scala_code_runner.scala_
+
+_Hello, world from the Scala code runner!_
+
+No more compilation was needed now.
+
+_.bloop_ was obviously made with the Bloop build server tool: https://scalacenter.github.io/bloop/
+
+<br/>
 
 ##_end
