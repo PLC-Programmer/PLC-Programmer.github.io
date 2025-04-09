@@ -1,6 +1,8 @@
-2025-04-08: work in progress
+2025-04-09: work in progress
 
 <br/>
+
+# (H) Tips for working with the sbt (simple build tool)
 
 Sometimes you want more detailed warnings during compilation, something which can be really helpful when working with intractable third-party libraries.
 
