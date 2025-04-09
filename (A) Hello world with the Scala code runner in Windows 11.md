@@ -123,7 +123,7 @@ In this directory make this Scala source code file, called _hello_world_for_scal
 ```
 
 Compile for the JVM:
-_/> scala hello_world_for_scala_code_runner.scala_
+_\> scala hello_world_for_scala_code_runner.scala_
 
 _Compiling project (Scala 3.6.4, JVM (17))_
 
