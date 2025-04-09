@@ -1,7 +1,5 @@
 2025-04-08: work in progress
 
-<br/>
-
 # Glossary, symbols and names
 
 $ = Bash prompt (Linux; here Ubuntu 24 LTS); standard user
