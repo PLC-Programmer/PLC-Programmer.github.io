@@ -12,11 +12,9 @@ _Welcome to sbt new!_
 
 _Here are some templates to get started:_
 
-_..._
-
 Select **option d)** with only pressing key [d] (and not pressing a following [ENTER]): _d) scala/scala3.g8 - Scala 3 seed template_
 
-Now enter project name (which is also the name of the project root directory): 
+Now enter your project name (which is also the name of the project root directory in the filesystem of the OS): 
 
 _name [Scala 3 Project Template]:_ _test_sbt_Windows_  # this is only an example project name
 
@@ -24,9 +22,9 @@ _Template applied in .\<project name>_
 	
 ![plot](https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/sbt_new_Windows.png)
 
-Now the **sbt project prompt** should show up:
+Now the **sbt prompt** should show up:
 
-_sbt:<project name>>_
+_sbt:\<project name\>>_
 
 <br/>
 
@@ -40,7 +38,7 @@ You may look up the exact version of a library from searching here: https://mvnr
 
 Now build and run this demo project like this:
 
-_sbt:<project name>> run_
+_sbt:\<project name\>> run_
 
 There should be a success now:
 
@@ -54,7 +52,7 @@ _I was compiled by Scala 3. :)_
 
 _[success] Total time: 3 s, completed 05.04.2025, 21:44:50_
 
-_sbt:<project name>>_
+_sbt:\<project name\>>_
 
 <br/>
  
@@ -64,7 +62,7 @@ _**.\<project name>\src\main\scala\Main.scala**_
 
 In the meantime you can put the sbt into the listening mode with the "~" character before a command to start building and running again when the _Main.scala_ file has been changed by you:
 
- _sbt:<project name>> ~run_
+ _sbt:\<project name\>> ~run_
 
 _[info] 1. Monitoring source files for root/run..._
 
@@ -92,7 +90,7 @@ _[info] Received input event: CancelWatch._
 
 ...and finally leave this sbt session with this command:
 
-_sbt:<project name>> exit_
+_sbt:\<project name\>> exit_
 
 _[info] shutting down sbt server_
 
