@@ -40,7 +40,7 @@ Now build and run this demo project like this:
 
 _sbt:\<project name\>> run_
 
-There should be a success now:
+There should be success now:
 
  _[info] compiling 1 Scala source to … .\<project name>\target\scala-3.6.4\classes ..._
 
@@ -58,9 +58,9 @@ _sbt:\<project name\>>_
  
 Now you can edit the Scala source code file with the main function (_@main def hello(): Unit =_ or something like this) at this relative path:
 
-_**.\<project name>\src\main\scala\Main.scala**_
+_**.\\<project name>\src\main\scala\Main.scala**_
 
-In the meantime you can put the sbt into the listening mode with the "~" character before a command to start building and running again when the _Main.scala_ file has been changed by you:
+In the meantime you can put the sbt into listening mode with the "~" character before a command to start building and running again when the _Main.scala_ file has been changed by you:
 
  _sbt:\<project name\>> ~run_
 
@@ -84,6 +84,8 @@ _[info] 2. Monitoring source files for root/run..._
 
 _[info]    Press <enter> to interrupt or '?' for more options._
 
+<br/>
+
 We end this monitoring session now, so press key [ENTER]
 
 _[info] Received input event: CancelWatch._
@@ -106,12 +108,12 @@ _[info] welcome to sbt 1.10.11 (Oracle Corporation Java 23.0.2)_
 
 <br/>
 
-### (C) as a basic workflow with my Scala programming
+### (C) as a basic workflow for my Scala programming
 
 This workflow (C), be it in Windows or Linux, is kind of a basic workflow for my (little) Scala programming. It involves 4 key concepts:
 
 * the starting point is opening an OS shell and changing to a directory which will be the parent directory of the later project root directory
-* remember that with the _> sbt new_ command from the OS shell and setting a project name at: _name [Scala 3 Project Template]:_ inside the simple build tool you will automatically create the OS project root directory!
+* remember that with the _> sbt new_ command from the OS shell and setting a project name at: _name [Scala 3 Project Template]:_ inside the simple build tool, you will automatically create the OS project root directory!
 * working on the _build.sbt_ configuration file located in the project root directory
 * the operation of the sbt, often having a leading "~" character at a sbt command to work in the foreground on source code files and project configuration files
 
