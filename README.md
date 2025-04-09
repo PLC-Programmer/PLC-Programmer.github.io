@@ -87,8 +87,6 @@ libraryDependencies += "org.apache.commons" % "commons-math3" % "3.6.1"
 
 (memo to myself: I hope that I remember to add now and then some examples for this and another configuration file for the sbt tool for an example project. You necessarily don't need a build tool for very simple things, but for anything more demanding and stepping outside of the Scala core, this tool - or another build tool - is **essential** from my point of view.)
 
-
-
 <br/>
 
 Of course, it's never a good sign when a language specific library, which was under development and in use for more than a decade, becomes retired.
@@ -99,6 +97,9 @@ From my point of view it would be a real pittly if the Scala programming languag
 
 2021-02-17: [Scala 3.0.0-RC1 – first release candidate is here](https://dotty.epfl.ch/blog/2021/02/17/scala3-rc1.html)
 
+<br/>
+
+And last but not least: the probability that someone will write and publish a book like "100 Scala Mistakes and How to Avoid Them" (see https://www.thecoder.cafe/p/100-go-mistakes) is rather low.
 
 ##_end
 
