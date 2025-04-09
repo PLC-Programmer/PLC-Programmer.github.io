@@ -1,6 +1,6 @@
-2025-04-08: work in progress
+2025-04-09: work in progress
 
-# (F) My problems with Scala
+# (G) My problems with Scala
 
 1/ Scala source code: does a character or string have symbolic or literal meaning?
 
