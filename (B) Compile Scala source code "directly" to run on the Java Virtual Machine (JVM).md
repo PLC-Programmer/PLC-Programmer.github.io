@@ -12,7 +12,7 @@ object hello_world_for_java:
 
 Compile it on Windows 11 and run it on the JVM like this:
 
-_/> scalac hello_world_for_java.scala_
+_> scalac hello_world_for_java.scala_
 
 The Scala compiler generated these 3 files in the same (Windows) directory:
 
@@ -32,7 +32,7 @@ _scala-reflect.jar_
 
 I copied these Java Archive files from my Windows installation of Scala: _<my Windows Home dir>\.sbt\boot\scala-2.12.20\lib_ to the project root directory, that is here the same directory as the Scala source code file and run:
 
-_/> java -cp .\scala-library.jar;.\scala-reflect.jar;.\ hello_world_for_java_
+_> java -cp .\scala-library.jar;.\scala-reflect.jar;.\ hello_world_for_java_
 
 **_Hello, world for Java!_**
 
