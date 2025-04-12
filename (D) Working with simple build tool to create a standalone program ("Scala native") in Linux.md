@@ -149,7 +149,6 @@ lazy val root = project
 enablePlugins(ScalaNativePlugin)
 ```
 
-
 <br/>
 
 Then the _plugin.sbt_ file must be added in the already existing _./project_ sub directory and have this plugin being added:
@@ -167,6 +166,43 @@ _\<project root dir\>/project$ cat plugin.sbt_
 ```
 addSbtPlugin("org.scala-native" % "sbt-scala-native" % "0.5.7")
 ```
+
+<br/>
+
+You may edit the _Main.scala_ source code file in the _\<project root dir\>/src/main/scala_ sub directory like this as a test:
+
+```
+@main def hello(): Unit =
+  println("Hello world from Scala Native with version 0.5.7!")
+  println(msg)
+
+def msg = "I was compiled by Scala 3. :)"
+```
+
+<br/>
+
+Now return to the Terminal with the sbt running and apply these commands:
+
+_sbt:\<project name\>> reload_  # reload the changed project configuration
+
+<hopefully some downloading is happening here>
+	
+Do again:
+
+_sbt:\<project name\>> nativeLink_
+
+<hopefully some more downloading is happening here and then some building>
+
+_[success] Total time: 10 s, completed Apr 7, 2025, 8:44:38 PM_
+
+_sbt:\<project name\>>_
+
+Make a run from the sbt as a test:
+
+_sbt:\<project name\>> run_
+
+
+
 
 (TBD)
 
