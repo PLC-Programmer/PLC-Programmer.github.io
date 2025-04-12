@@ -39,19 +39,40 @@ _Template applied in .\<project name>_
 
 See also from this use case: https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(C)%20Working%20with%20simple%20build%20tool%20to%20run%20an%20app%20on%20the%20JVM%20in%20Windows%20with%20(3rd%20party)%20imports.md#select-option-d
 
-Now the **sbt prompt** should show up:
-
-_sbt:\<project name\>>_
-
 <br/>
 
-Optionally edit, without leaving this sbt session, the _**build.sbt**_ file in the _./\<project root dir\>/build.sbt_: often one or more library dependencies have to be added there, here for example:
+Optionally edit the _**build.sbt**_ file in the _./\<project root dir\>/build.sbt_: often one or more library dependencies have to be added there, here for example:
 
 _libraryDependencies += "org.typelevel" %% "cats-core" % "2.13.0"_
 
 You may look up the exact version of a library from searching here: https://mvnrepository.com/
 	
 <br/>
+
+Now change into the project root directory:
+
+_$ cd <project root dir>_
+
+..and start the sbt again:
+
+_$ sbt_
+
+_[info] welcome to sbt 1.10.11 (Eclipse Adoptium Java 11.0.26)_
+
+_[info] loading project definition from /home/ ... /\<project name\>/project_
+
+_[info] loading settings for project root from build.sbt..._
+
+_[info] set current project to \<project name\> (in build file:/home/\<user\>/ ... /\<project name\>/)_
+
+_[info] sbt server started at local:///home/\<user\>/.sbt/1.0/server/35e75b11c375067c3e8d/sock_
+
+_[info] started sbt server_
+
+Now the **sbt prompt** should show up:
+
+_sbt:\<project name\>>_
+
 
 
 
