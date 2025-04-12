@@ -120,7 +120,55 @@ _[error]           ^_
 
 _sbt:\<project name\>>_
 
+<br/>
 
+Apperantly, the _build.sbt_ file must be fixed first.
+
+**Without leaving the sbt**, open a second Terminal (and keep it running!) and **append** line _enablePlugins(ScalaNativePlugin)_ like this for example (you could also use a text editor for doing this parallel job):
+
+_<project root dir>/project$ echo "enablePlugins(ScalaNativePlugin)" > build.sbt_
+
+You may also check the success of this operation like this for example:
+
+_<project root dir>/project$ cat build.sbt_
+
+```
+val scala3Version = "3.6.4"
+
+lazy val root = project
+  .in(file("."))
+  .settings(
+    name := "option_d_standalone2",
+    version := "0.1.0-SNAPSHOT",
+
+    scalaVersion := scala3Version,
+
+    libraryDependencies += "org.scalameta" %% "munit" % "1.0.0" % Test
+  )
+
+enablePlugins(ScalaNativePlugin)
+```
+
+
+<br/>
+
+Then the _plugin.sbt_ file must be added in the already existing _./project_ sub directory and have this plugin being added:
+
+_<project root dir>$ cd project_
+
+_<project root dir>/project$ echo "addSbtPlugin(\"org.scala-native\" % \"sbt-scala-native\" % \"0.5.7\")" > plugin.sbt_
+
+I got this latest Scala native version from here: https://www.scala-native.org/en/stable/
+
+Again, you can check this success like this:
+
+_<project root dir>/project$ cat plugin.sbt_
+
+```
+
+addSbtPlugin("org.scala-native" % "sbt-scala-native" % "0.5.7")
+
+```
 
 (TBD)
 
