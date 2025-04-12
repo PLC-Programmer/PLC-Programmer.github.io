@@ -42,6 +42,18 @@ _\> cd \<project root dir\>_
 
 _\> sbt_
 
+_[info] welcome to sbt 1.10.11 (Oracle Corporation Java 1.8.0_441)_
+
+_[info] loading project definition from ... .\<project name>\project_
+
+_[info] loading settings for project root from build.sbt..._
+
+_[info] set current project to <project name> (in build file: ... ./\<project name\>/)_
+
+_[info] sbt server started at local:sbt-server-84a7d2d60ce9c59ce491_
+
+_[info] started sbt server_
+
 Now the **sbt prompt** should show up:
 
 _sbt:\<project name\>>_
