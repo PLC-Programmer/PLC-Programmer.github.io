@@ -8,7 +8,7 @@ If not happened yet, install the _clang_ compiler first. LLVM is not needed acco
 
 _$ sudo apt install clang_
 
-Then I checked version and availability:
+Then check version and availability:
 
 _$ clang --version_
 
@@ -20,7 +20,39 @@ _Thread model: posix_
 
 _InstalledDir: /usr/bin_
 
+### Install Scala on Ubuntu and test it a little bit
+
+You can install Scala on Ubuntu like this:
+
+_$ curl -fL https://github.com/coursier/coursier/releases/latest/download/cs-x86_64-pc-linux.gz | gzip -d > cs && chmod +x cs && ./cs setup_
+
+...
+
+_Checking if a JVM is installed_
+
+...
+
+_No JVM found, should we try to install one? [Y/n]_ --> press [Y]
+
+...
+
+In case of a problem, here's the official installation guide for latest **Coursier** version 2.1.25-M4: https://get-coursier.io/docs/cli-installation
+
+_These instructions will install the coursier CLI cs itself, as well as a typical Scala development environment._
+
+Now a reboot of the Linux machine is needed, not only a re-opening of the Linux shell.
+
 <br/>
+
+Check the installation after the reboot:
+
+_$ scala -version_
+
+_Scala code runner version: 1.5.4_
+
+_Scala version (default): 3.6.4_
+
+### Start a Scala project
 
 Now open the Bash shell (Terminal) and set your working directory so that it will be **the parent directory of the later project root directory**:
 
@@ -335,7 +367,7 @@ _**Hello, world!**_
 
 <br/>
 
-#### Is "Scala native" worth the effort?
+### Is "Scala native" worth the effort?
 
 I don't think so. I think the natural runtime environment for Scala programs is (still) the Java Runtime Environment (JRE).
 
