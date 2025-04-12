@@ -1,4 +1,4 @@
-2025-04-09: work in progress
+2025-04-12: work in progress
 
 # (C) Working with simple build tool to run an app on the JVM in Windows with (3rd party) imports
 
@@ -12,7 +12,9 @@ _Welcome to sbt new!_
 
 _Here are some templates to get started:_
 
-Select **option d)** with only pressing key [d] (and not pressing a following [ENTER]): _d) scala/scala3.g8 - Scala 3 seed template_
+#### Select option d)
+
+with only pressing key [d] (and not pressing a following [ENTER]): _d) scala/scala3.g8 - Scala 3 seed template_
 
 Now enter your project name (which is also the name of the project root directory in the filesystem of the OS): 
 
