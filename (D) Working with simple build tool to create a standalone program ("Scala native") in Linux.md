@@ -275,7 +275,7 @@ This seems to be specifically true if a program is doing big and/or a lot of ite
 
 See from here for example: https://www.oreilly.com/library/view/learning-java-5th/9781492056263/
 
-Historically, interpreters have been considered slow, but Java is not a traditional interpreted language. In addition to compiling source code down to portable bytecode, Java has also been carefully designed so that software implementations of the runtime system can further optimize their performance by compiling bytecode to native machine code on the fly. This is called just-in-time (JIT) or dynamic compilation. With JIT compilation, Java code can execute as fast as native code and maintain its transportability and security.
+_Historically, interpreters have been considered slow, but Java is not a traditional interpreted language. In addition to compiling source code down to portable bytecode, Java has also been carefully designed so that software implementations of the runtime system can further optimize their performance by compiling bytecode to native machine code on the fly. This is called just-in-time (JIT) or dynamic compilation. With JIT compilation, Java code can execute as fast as native code and maintain its transportability and security._
 
 So, compiling Scala source code to OS specific binary code is not necessarily a better thing than compiling it to standard and portable bytecode for the JVM.
 
