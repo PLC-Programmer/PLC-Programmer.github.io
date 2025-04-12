@@ -1,5 +1,7 @@
 2025-04-12: work in progress
 
+Direct jump to [(D2) Working with scala-cli to create a standalone program in Windows 11](https://github.com/PLC-Programmer/PLC-Programmer.github.io/edit/main/(D)%20Working%20with%20simple%20build%20tool%20to%20create%20a%20standalone%20program%20(%22Scala%20native%22)%20in%20Linux.md#d2-working-with-scala-cli-to-create-a-standalone-program-in-windows-11)
+
 # (D) Working with simple build tool to create a standalone program ("Scala native") in Linux
 
 If not happened yet, install the _clang_ compiler first. LLVM is not needed according to my tests. I used this description: https://www.cyberithub.com/how-to-install-clang-tool-on-ubuntu-or-debian-linux/ ("How to Install clang tool on Ubuntu or Debian Linux") and installed it like this:
@@ -262,6 +264,74 @@ _c) sbt/cross-platform.local - A cross-JVM/JS/Native project_
 <br/>
 
 Fun fact: a cool 6.711 items, totalling 34,5 MB, have been created for this project so far! 
+
+<br/>
+
+
+### (D2) Working with scala-cli to create a standalone program in Windows 11
+
+"Standalone program" == "Scala native" program
+
+In Windows, the Scala shell, that is the command-line tool _scala-cli_, can be used to compile Scala source code into an executable Windows program.
+
+If not done yet, download and install something like this: **Visual Studio Community 2022** with the "C++ for Desktop workload".
+
+Manually add path to _cl.exe_ to the Windows _PATH_ environment variable; for example:
+
+_C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\Hostx64\x64;_
+
+Check availability of _cl.exe_ in a Windows Terminal ("cmd.exe"):
+
+_> cl.exe_
+
+_Microsoft (R) C/C++-Optimierungscompiler Version 19.43.34809 für x64_
+
+...
+
+Change to the directory of the source code file which contains _main_, here _hello_world.scala_:
+
+```
+@main def helloWorld() = println("Hello, world!")
+```
+
+This directory may contain only this source code file, nothing more is needed.
+
+Run build command like this. It may take some time the first time:
+
+_> scala-cli package hello_world.scala -o hello_world --native-image --power_
+
+_Starting compilation server_
+
+_Compiling project (Scala 3.6.4, JVM (17))_
+
+_Compiled project (Scala 3.6.4, JVM (17))_
+
+_\<project dir\>>chcp 437_
+
+_Active code page: 437_
+
+...
+
+_----------------------------------------------------------------------_
+
+_Produced artifacts:_
+
+_\<project dir\>\hello_world.build_artifacts.txt (txt)_
+ 
+_\<project dir\>\hello_world.exe (executable)_
+
+_======================================================================_
+
+_Finished generating 'hello_world' in 12,7s._
+
+_Wrote \<project dir\>\hello_world.exe, run it with_
+
+_.\hello_world.exe_
+
+Do this as told:
+
+_**Hello, world!**_
+
 
 <br/>
 
