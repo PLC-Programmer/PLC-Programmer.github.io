@@ -1,6 +1,6 @@
 ## 2025-04-07: starting with a series on "Running and building Scala programs - baby steps"
 
-2025-04-08: work in progress
+2025-04-12: work in progress
 
 Links:
 
