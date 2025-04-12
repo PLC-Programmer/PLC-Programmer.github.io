@@ -121,8 +121,51 @@ Here we are:
 
 ![plot](https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/hello_world_from_vite.png)
 
-### yyyyyy
+<br/>
 
+### Building my own little demo project with the sbt
+
+After this initial success (though Vite complained about _Sourcemap for "... .js" points to missing source files_ four times), I started another demo project with only a few changes in a different project root directory named _hello_world2_with_sbt_:
+
+_$ sbt new_ --> after selecting option m) again, enter _hello_world2_with_sbt_ as the project name
+
+<sbt is doing its stuff>
+
+Now I worked a bit on the main source code file, the project configuration file and the project directory structure:
+
+#### Change #1
+
+Starting with the project root directory, I moved file _./src/main/scala/example/Main.scala_ to _./src/main/scala/main/Main.scala_
+
+Having a _main_ subdirectory under directory _scala_ isn't very creative indeed, it's just a replacement for _example_ from the sbt.
+
+I modified _Main.scala_ like this:
+
+```
+package main
+@main def something(): Unit =  // @main is obviously important, def xxxx() is not
+  // some more fancy HTML code:
+  dom.document.querySelector("#app").innerHTML = s"""
+  <head>
+    <style>
+      .my-element {
+        width: 600px; /* Set the width to 600 pixels */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="my-element">
+      __** this is an example element with a constant width of 600 pixels **__
+    </div>
+  </body>
+  """
+```
+
+
+
+
+
+#### Change #2
 
 
 (TBD)
