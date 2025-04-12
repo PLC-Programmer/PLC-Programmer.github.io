@@ -37,7 +37,7 @@ _name [Scala 3 Project Template]: test_sbt_Linux_ # this is only an example proj
 
 _Template applied in .\<project name>_
 
-See also from this use case: https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(C)%20Working%20with%20simple%20build%20tool%20to%20run%20an%20app%20on%20the%20JVM%20in%20Windows%20with%20(3rd%20party)%20imports.md#select-option-d
+See also from this use case: [Select option d)](https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(C)%20Working%20with%20simple%20build%20tool%20to%20run%20an%20app%20on%20the%20JVM%20in%20Windows%20with%20(3rd%20party)%20imports.md#select-option-d)
 
 <br/>
 
