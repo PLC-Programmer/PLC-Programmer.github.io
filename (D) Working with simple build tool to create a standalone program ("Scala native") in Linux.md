@@ -93,7 +93,7 @@ _[success] Total time: 3 s, completed Apr 12, 2025, 10:41:22 AM_
 
 <br/>
 
-But how to make this application "Scala Native"?
+But how to make this application "Scala native"?
 
 I followed this advice at chapter "Compiling and running your Scala Native application" from:
 
@@ -229,9 +229,11 @@ Bingo!
 
 <br/>
 
-As a second test I copied file \<project name\> to another Ubuntu 24 LTS system and run it there (with no Scala, Java etc. resources installed) - don't forget to do first: _$ chmod 774 ./_\<project name\>
+As a second test, I copied file \<project name\> to another Ubuntu 24 LTS system and run it there (with no Scala, Java etc. resources installed).
 
-_$_./\<project name\>
+Don't forget to do first: _$ chmod 774 ./_\<project name\>
+
+_$_ ./\<project name\>
 
 _Hello world from Scala Native with version 0.5.7!_
 
@@ -251,7 +253,7 @@ _$_
 
 <br/>
 
-I also tried option c) at sbt new:
+I also tried option c) at the _sbt new_ command:
 
 _c) sbt/cross-platform.local - A cross-JVM/JS/Native project_
 
@@ -260,6 +262,22 @@ _c) sbt/cross-platform.local - A cross-JVM/JS/Native project_
 <br/>
 
 Fun fact: a cool 6.711 items, totalling 34,5 MB, have been created for this project so far! 
+
+<br/>
+
+#### Is "Scala native" worth the effort?
+
+I don't think so. I think the natural runtime environment for Scala programs is (still) the Java Runtime Environment (JRE).
+
+When I wrote a more elaborate Scala program, I noticed that running this program in the JRE is (substantially) **faster** than the "Scala native" version! :flushed:
+
+This seems to be specifically true if a program is doing big and/or a lot of iterations.
+
+See from here for example: https://www.oreilly.com/library/view/learning-java-5th/9781492056263/
+
+Historically, interpreters have been considered slow, but Java is not a traditional interpreted language. In addition to compiling source code down to portable bytecode, Java has also been carefully designed so that software implementations of the runtime system can further optimize their performance by compiling bytecode to native machine code on the fly. This is called just-in-time (JIT) or dynamic compilation. With JIT compilation, Java code can execute as fast as native code and maintain its transportability and security.
+
+So, compiling Scala source code to OS specific binary code is not necessarily a better thing than compiling it to standard and portable bytecode for the JVM.
 
 <br/>
 
