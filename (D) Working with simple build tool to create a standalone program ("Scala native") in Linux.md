@@ -122,7 +122,7 @@ _sbt:\<project name\>>_
 
 <br/>
 
-Apperantly, the _build.sbt_ file must be fixed first.
+Apparently, the _build.sbt_ file must be fixed first.
 
 **Without leaving the sbt**, open a second Terminal (and keep it running!) and **append** line _enablePlugins(ScalaNativePlugin)_ like this for example (you could also use a text editor for doing this parallel job):
 
