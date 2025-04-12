@@ -6,6 +6,114 @@ Windows 11: the official Scala to JavaScript demo didn't work for me (that is in
 
 I did this:
 
+### Install Vite and Yarn
+
+At first I installed Vite (a frontend build tool) and Yarn (a JavaScript package manager): https://tecadmin.net/install-yarn-on-ubuntu-22-04/ --> I took method 1:
+
+_$ sudo apt update_
+
+_$ sudo apt install nodejs npm_
+
+_$ sudo npm install --global yarn_
+
+_$ yarn --version_
+
+_1.22.22_
+
+_$ nodejs --version_
+
+_v18.19.1_
+
+### Build the default demo project with the sbt
+
+Run in your project root directory:
+
+_$ sbt new_
+
+Here take option _m) scala-js/vite.g8 - A Scala.JS + Vite project_
+
+As usual just enter the [m] key here, do not press [ENTER] at this, or any other option!!
+
+name: press [ENTER] to accept this demo project name "scalajs-vite-example"
+
+use_yarn: press [ENTER] to use yarn
+
+...
+_.\Template applied in Template applied in ... ./scalajs-vite-example_
+
+Change into the project root directory:
+
+_$ cd ./scalajs-vite-example_
+
+Now do the background build of this demo project after every source code change ("~"):
+
+_$ sbt ~fastLinkJS_
+
+...
+
+_[success] Total time: 15 s, completed Apr 2, 2025, 9:12:40 PM_
+
+_[info] 1. Monitoring source files for root/fastLinkJS..._
+
+_[info]    Press <enter> to interrupt or '?' for more options._ <-- I pressed the [ENTER] key because I didn't open a second Terminal for the next steps
+
+_[info] Received input event: CancelWatch._
+
+_[info] shutting down sbt server_
+
+Do this for every new project:
+
+_$ yarn_
+
+...
+
+_yarn install v1.22.22_
+
+_info No lockfile found._
+
+_[1/4] Resolving packages..._
+
+_[2/4] Fetching packages..._
+
+_[3/4] Linking dependencies..._
+
+_[4/4] Building fresh packages..._
+
+_success Saved lockfile._
+
+_Done in 15.69s._
+
+<br/>
+
+Now start the web server:
+
+_$ npm run dev_
+
+_> scalajs-vite-example@0.1.0-SNAPSHOT dev_
+
+_> vite_
+
+_[info] welcome to sbt 1.8.2 (Eclipse Adoptium Java 11.0.26)_
+
+_[info] loading settings for project scalajs-vite-example-build from plugins.sbt ..._
+
+_[info] loading project definition from ... ./Scala/scalajs-vite-example/project_
+
+_[info] loading settings for project root from build.sbt ..._
+
+_[info] set current project to scalajs-vite-example (in build file: ... ./scalajs-vite-example/)_
+
+_... ./scalajs-vite-example/target/scala-3.2.2/scalajs-vite-example-fastopt_
+
+_  VITE v4.5.11  ready in 3764 ms_
+
+  _➜  Local:   http://localhost:5173/_
+  _➜  Network: use --host to expose_
+  _➜  press h to show help_
+
+
+
+
 (TBD)
 
 <br/>
