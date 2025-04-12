@@ -1,6 +1,6 @@
 2025-04-12: work in progress
 
-Direct jump to [(D2) Working with scala-cli to create a standalone program in Windows 11](https://github.com/PLC-Programmer/PLC-Programmer.github.io/edit/main/(D)%20Working%20with%20simple%20build%20tool%20to%20create%20a%20standalone%20program%20(%22Scala%20native%22)%20in%20Linux.md#d2-working-with-scala-cli-to-create-a-standalone-program-in-windows-11)
+Direct jump to [(D2) Working with scala-cli to create a standalone program in Windows 11](https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(D)%20Working%20with%20simple%20build%20tool%20to%20create%20a%20standalone%20program%20(%22Scala%20native%22)%20in%20Linux.md#d2-working-with-scala-cli-to-create-a-standalone-program-in-windows-11)
 
 # (D) Working with simple build tool to create a standalone program ("Scala native") in Linux
 
