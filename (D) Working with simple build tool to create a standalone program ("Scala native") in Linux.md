@@ -138,7 +138,7 @@ val scala3Version = "3.6.4"
 lazy val root = project
   .in(file("."))
   .settings(
-    name := "option_d_standalone2",
+    name := "test_sbt_Linux",
     version := "0.1.0-SNAPSHOT",
 
     scalaVersion := scala3Version,
@@ -185,15 +185,15 @@ Now return to the Terminal with the sbt running and apply these commands:
 
 _sbt:\<project name\>> reload_  # reload the changed project configuration
 
-<hopefully some downloading is happening here>
+\<hopefully some downloading is happening here\>
 	
 Do again:
 
 _sbt:\<project name\>> nativeLink_
 
-<hopefully some more downloading is happening here and then some building>
+\<hopefully some more downloading is happening here and then some building\>
 
-_[success] Total time: 10 s, completed Apr 7, 2025, 8:44:38 PM_
+_[success] Total time: 5 s, completed Apr 12, 2025, 11:27:35 AM_
 
 _sbt:\<project name\>>_
 
@@ -201,10 +201,65 @@ Make a run from the sbt as a test:
 
 _sbt:\<project name\>> run_
 
+_[info] Build skipped: No changes detected in build configuration and class path contents since last build._
 
+**_Hello world from Scala Native with version 0.5.7!_**
 
+_I was compiled by Scala 3. :)_
 
-(TBD)
+_[success] Total time: 0 s, completed Apr 12, 2025, 11:29:53 AM_
+
+_sbt:\<project name\>>_
+
+<br/>
+
+**The executable** can now be found in sub directory _\<project root dir\>/target/scala-3.6.4/_ with file name **\<project name\>**
+
+Run it in the second Terminal (so still keep the sbt running in the first Terminal):
+
+_\<project root dir\>/target/scala-3.6.4$_ ./\<project name\>
+
+_Hello world from Scala Native with version 0.5.7!_
+
+_I was compiled by Scala 3. :)_
+
+_\<project root dir\>/target/scala-3.6.4$_
+
+Bingo!
+
+<br/>
+
+As a second test I copied file \<project name\> to another Ubuntu 24 LTS system and run it there (with no Scala, Java etc. resources installed) - don't forget to do first: _$ chmod 774 ./_\<project name\>
+
+_$_./\<project name\>
+
+_Hello world from Scala Native with version 0.5.7!_
+
+_I was compiled by Scala 3. :)_
+
+Double Bingo!
+
+<br/>
+
+Finally do this:
+
+_sbt:\<project name\>> exit_
+
+_[info] shutting down sbt server_
+
+_$_
+
+<br/>
+
+I also tried option c) at sbt new:
+
+_c) sbt/cross-platform.local - A cross-JVM/JS/Native project_
+
+..but was not really sure so far what to make out of the _./\<project root dir\>/core_ sub directory and all the other created artefacts.
+
+<br/>
+
+Fun fact: a cool 6.711 items, totalling 34,5 MB, have been created for this project so far! 
 
 <br/>
 
