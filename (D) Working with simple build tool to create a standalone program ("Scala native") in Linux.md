@@ -73,6 +73,25 @@ Now the **sbt prompt** should show up:
 
 _sbt:\<project name\>>_
 
+<br/>
+
+As a test, build and run this demo project:
+
+_sbt:\<project name\>>run_
+
+There should be success now:
+
+_[info] compiling 1 Scala source to /home/\<user\>/ ... /\<project name\>/target/scala-3.6.4/classes ..._
+
+_[info] running hello _
+
+**Hello world!**__
+
+_I was compiled by Scala 3. :)_
+
+_[success] Total time: 3 s, completed Apr 12, 2025, 10:41:22 AM_
+
+<br/>
 
 
 
