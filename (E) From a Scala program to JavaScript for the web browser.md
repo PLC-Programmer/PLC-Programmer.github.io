@@ -161,11 +161,30 @@ package main
   """
 ```
 
-
-
-
-
 #### Change #2
+
+In the project configuration file _.\hello_world2_with_sbt\build.sbt_ change the project name to:
+
+_name := "**hello_world2_with_sbt**",_
+
+Change this line to: _.withModuleSplitStyle(ModuleSplitStyle.SmallModulesFor(List("**main**")))_
+
+Principially keep the sbt directory structure _...\<project root dir\>/src/main/scala/main_, even with a duplicate _main_ name.
+
+Link the project updates:  
+
+_$ sbt ~fastLinkJS_
+
+Open another Bash shell and run (in the background):
+
+_$ yarn_
+
+_$ npm run dev  # start the web server_
+
+Open the web browser again at: http://localhost:5173/ =>
+
+![plot](https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/hello_world2_with_sbt_from_vite.png)
+
 
 
 (TBD)
