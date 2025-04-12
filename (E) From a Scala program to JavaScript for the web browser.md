@@ -8,7 +8,7 @@ I did this:
 
 ### Install Vite and Yarn
 
-At first I installed Vite (a frontend build tool) and Yarn (a JavaScript package manager): https://tecadmin.net/install-yarn-on-ubuntu-22-04/ --> I took method 1:
+At first I installed Vite (a frontend build tool) and Yarn (a JavaScript package manager). From this source https://tecadmin.net/install-yarn-on-ubuntu-22-04/ I took method 1:
 
 _$ sudo apt update_
 
@@ -185,9 +185,11 @@ Open the web browser again at: http://localhost:5173/ =>
 
 ![plot](https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/hello_world2_with_sbt_from_vite.png)
 
+### Sources for more elaborate examples
 
+See from here for example: https://www.scala-js.org/doc/tutorial/basic/
 
-(TBD)
+See other advanced examples from here: https://scribble.ninja/
 
 <br/>
 
