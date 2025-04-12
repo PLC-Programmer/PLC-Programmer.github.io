@@ -41,7 +41,7 @@ See also from this use case: https://github.com/PLC-Programmer/PLC-Programmer.gi
 
 <br/>
 
-Optionally edit the _**build.sbt**_ file in the _./\<project root dir\>/build.sbt_: often one or more library dependencies have to be added there, here for example:
+Optionally edit the _**build.sbt**_ file in _./\<project root dir\>/build.sbt_: often one or more library dependencies have to be added there, here for example:
 
 _libraryDependencies += "org.typelevel" %% "cats-core" % "2.13.0"_
 
@@ -77,15 +77,15 @@ _sbt:\<project name\>>_
 
 As a test, build and run this demo project:
 
-_sbt:\<project name\>>run_
+_sbt:\<project name\>> run_
 
 There should be success now:
 
 _[info] compiling 1 Scala source to /home/\<user\>/ ... /\<project name\>/target/scala-3.6.4/classes ..._
 
-_[info] running hello _
+_[info] running hello_
 
-**Hello world!**__
+_**Hello world!**_
 
 _I was compiled by Scala 3. :)_
 
