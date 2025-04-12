@@ -24,19 +24,28 @@ _Template applied in .\<project name>_
 	
 ![plot](https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/sbt_new_Windows.png)
 
-Now the **sbt prompt** should show up:
-
-_sbt:\<project name\>>_
-
 <br/>
 
-Optionally edit, without leaving this sbt session, the _**build.sbt**_ file in the _.\<project root dir>\build.sbt_: often one or more library dependencies have to be added there, here for example:
+Optionally edit the _**build.sbt**_ file in the _.\<project root dir>\build.sbt_: often one or more library dependencies have to be added there, here for example:
 
 _libraryDependencies += "org.typelevel" %% "cats-core" % "2.13.0"_
 
 You may look up the exact version of a library from searching here: https://mvnrepository.com/
 	
 <br/>
+
+Now change into the project root directory:
+
+_\> cd \<project root dir\>_
+
+..and start the sbt again:
+
+_\> sbt_
+
+Now the **sbt prompt** should show up:
+
+_sbt:\<project name\>>_
+
 
 Now build and run this demo project like this:
 
