@@ -93,6 +93,33 @@ _[success] Total time: 3 s, completed Apr 12, 2025, 10:41:22 AM_
 
 <br/>
 
+But how to make this application "Scala Native"?
+
+I followed this advice at chapter "Compiling and running your Scala Native application" from:
+
+_Getting Started with Scala Native: A Comprehensive Guide for Beginners_
+
+https://medium.com/@diehardankush/getting-started-with-scala-native-a-comprehensive-guide-for-beginners-dedafeed7f25
+Ankush Singh, Apr 23, 2023
+
+…and found this command:
+
+_sbt:<project name>> **nativeLink**_
+
+_[error] Not a valid command: nativeLink_
+
+_[error] Not a valid project ID: nativeLink_
+
+_[error] Expected ':'_
+
+_[error] Not a valid key: nativeLink_
+
+_[error] nativeLink_
+
+_[error]           ^_
+
+_sbt:\<project name\>>_
+
 
 
 (TBD)
