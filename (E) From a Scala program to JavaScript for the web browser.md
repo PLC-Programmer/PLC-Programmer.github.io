@@ -113,6 +113,15 @@ _➜  Network: use --host to expose_
   
 _➜  press h to show help_
 
+<br/>
+
+Now open a local web browser to the given address http://localhost:5173/ -- but be careful not to stop the web server with wrong mouse clicks or so in this reactive Terminal (otherwise restart it with running _npm run dev_ again).
+
+Here we are:
+
+![plot](https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/hello_world_from_vite.png)
+
+### yyyyyy
 
 
 
