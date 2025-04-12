@@ -89,7 +89,7 @@ Now start the web server:
 
 _$ npm run dev_
 
-_> scalajs-vite-example@0.1.0-SNAPSHOT dev_
+_> scalajs-vite-example \@ 0.1.0-SNAPSHOT dev_
 
 _> vite_
 
@@ -105,11 +105,13 @@ _[info] set current project to scalajs-vite-example (in build file: ... ./scalaj
 
 _... ./scalajs-vite-example/target/scala-3.2.2/scalajs-vite-example-fastopt_
 
-_  VITE v4.5.11  ready in 3764 ms_
+_VITE v4.5.11  ready in 3764 ms_
 
-  _➜  Local:   http://localhost:5173/_
-  _➜  Network: use --host to expose_
-  _➜  press h to show help_
+_➜  Local:   http://localhost:5173/_
+  
+_➜  Network: use --host to expose_
+  
+_➜  press h to show help_
 
 
 
