@@ -16,6 +16,8 @@ bsp = Build Server Protocol: a bsp configuration file (_scala.json_) makes a com
 
 $ coursier = "cs" = application and artifact manager to install Scala applications and setup your Scala development environment: https://get-coursier.io/, https://get-coursier.io/docs/cli-overview
 
+DOM (Document Object Model) API for interaction with a web page. The DOM representation as an object-oriented representation of a web page allows it to be modified with a scripting language such as JavaScript: https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
+
 ~.jar = Java Archive file
 
 (JDK = Java Development Kit)
