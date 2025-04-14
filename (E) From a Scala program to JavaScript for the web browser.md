@@ -127,7 +127,7 @@ Here we are:
 
 After this initial success (though Vite complained about _Sourcemap for "... .js" points to missing source files_ four times), I started another demo project with only a few changes in a different project root directory named _hello_world2_with_sbt_:
 
-_$ sbt new_ --> after selecting option m) again, enter _hello_world2_with_sbt_ as the project name
+_$ sbt new_ --> after selecting option m) again, enter _hello_world2_with_sbt_ as the project name for example
 
 <sbt is doing its stuff>
 
