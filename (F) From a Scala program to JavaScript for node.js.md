@@ -1,6 +1,8 @@
 2025-04-14: work in progress
 
-Spoler alert: this use case has practically no value for me because so far I couldn't find a solution for this open point described below: [How to read from the console when executing JavaScript on node.js?](#how-to-read-from-the-console-when-executing-javascript-on-node)
+Spoler alert: this use case has practically no value for me because so far I couldn't find a solution for this open point described below:
+
+[How to read from the console when executing JavaScript on node.js?](#how-to-read-from-the-console-when-executing-javascript-on-nodejs)
 
 <br/>
 
@@ -115,12 +117,13 @@ See also more official advice from here: https://scala-cli.virtuslab.org/docs/gu
 
 #### "Stopwatch" app in JavaScript for node.js
 
-This little demo app doesn't implement a real stopwatch here since no genuine computations going on, but a timeout of 1,000 milliseconds.
+This little demo app doesn't implement a real stopwatch since no genuine computations are going on, but a timeout of 1,000 milliseconds.
 
 ```
 //> using scala 3.6.4
 import scala.scalajs.js.timers
 import scala.scalajs.js.Date
+
 object stopwatch_in_JavaScript {
   def main(args: Array[String]): Unit = {
     println("Welcome to a test of some imported scala.scalajs.js methods:")
@@ -142,11 +145,13 @@ In _build.sbt_ line:
 
 _scalaJSUseMainModuleInitializer := true,_
 
-..is needed, otherwise the app cannot be linked (with the fastLinkJS command in the sbt).
+..is needed, otherwise the app cannot be linked (with the _fastLinkJS_ command in the sbt).
 
-Check for _**%%%**_ in _build.sbt_:
+Check for **%%%** in _build.sbt_:
 
 _libraryDependencies += "org.typelevel" **%%%** "cats-effect" % "3.6.1"_
+
+<br/>
 
 > **Use %%% instead of %% when depending on other Scala.js library's**
 
