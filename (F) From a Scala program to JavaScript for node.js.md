@@ -115,7 +115,44 @@ See also more official advice from here: https://scala-cli.virtuslab.org/docs/gu
 
 #### "Stopwatch" app in JavaScript for node.js
 
-(TBD)
+This little demo app doesn't implement a real stopwatch here since no genuine computations going on, but a timeout of 1,000 milliseconds.
+
+```
+//> using scala 3.6.4
+import scala.scalajs.js.timers
+import scala.scalajs.js.Date
+object stopwatch_in_JavaScript {
+  def main(args: Array[String]): Unit = {
+    println("Welcome to a test of some imported scala.scalajs.js methods:")
+    val sleep_ms = 1000
+    val t0 = Date.now()
+    val sleep = timers.setTimeout(sleep_ms) {
+                  val t1 = Date.now()
+                  val time_diff = t1 - t0
+                  val out_str = "this was a waiting time of " + time_diff + " milliseconds"
+                  println(out_str)
+                }
+  }
+}
+```
+
+Again, check config files _plugins.sbt_ and _build.sbt_.
+
+In _build.sbt_ line:
+
+_scalaJSUseMainModuleInitializer := true,_
+
+..is needed, otherwise the app cannot be linked (with the fastLinkJS command in the sbt).
+
+Check for _**%%%**_ in _build.sbt_:
+
+_libraryDependencies += "org.typelevel" **%%%** "cats-effect" % "3.6.1"_
+
+> **Use %%% instead of %% when depending on other Scala.js library's**
+
+See from here: https://www.scala-js.org/doc/project/linking-errors.html
+
+You can look up details of the _**scala.scalajs.js**_ package from here: https://javadoc.io/doc/org.scala-js/scalajs-library_2.12/latest/scala/scalajs/js/index.html
 
 <br/>
 
