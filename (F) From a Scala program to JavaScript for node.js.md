@@ -155,7 +155,9 @@ _libraryDependencies += "org.typelevel" **%%%** "cats-effect" % "3.6.1"_
 
 See from here: https://www.scala-js.org/doc/project/linking-errors.html
 
-#### the scala.scalajs.js package
+<br/>
+
+### The scala.scalajs.js package
 
 The scala.scalajs.js package is for "Types, methods and values for interoperability with JavaScript libraries."; see officially from here: https://javadoc.io/doc/org.scala-js/scalajs-library_2.12/latest/scala/scalajs/js/index.html
 
