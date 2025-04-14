@@ -198,8 +198,6 @@ Like this for example:
 
 This (part of a) program runs without any problems in a Windows or Linux Terminal.
 
-However, I was't able to conceive Scala code that can do the same - or something similar - as a JavaScript program (for node.js).
-
 The very best I got so far is this:
 
 (TBD)
