@@ -42,7 +42,7 @@ $ scala-cli = Scala shell, that is a command-line tool to interact with the Scal
 
 $ scalac = Scala compiler: https://docs.scala-lang.org/overviews/compiler-options/index.html
 
-Scala,ja = a compiler to write Scala code that runs in browsers, Node.js, and serverless environments: https://www.scala-js.org/
+Scala.js = a compiler to write Scala code that runs in browsers, Node.js, and serverless environments: https://www.scala-js.org/
 
 Vite = frontend build tool for web applications: https://vite.dev/ 
 
