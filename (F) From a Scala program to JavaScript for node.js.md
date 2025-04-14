@@ -159,11 +159,13 @@ See from here: https://www.scala-js.org/doc/project/linking-errors.html
 
 ### The scala.scalajs.js package
 
-The scala.scalajs.js package is for "Types, methods and values for interoperability with JavaScript libraries."; see officially from here: https://javadoc.io/doc/org.scala-js/scalajs-library_2.12/latest/scala/scalajs/js/index.html
+The _scala.scalajs.js_ package is for "Types, methods and values for interoperability with JavaScript libraries."; see officially from here: https://javadoc.io/doc/org.scala-js/scalajs-library_2.12/latest/scala/scalajs/js/index.html
 
 <br/>
 
 ### How to read from the console when executing JavaScript on node.js?
+
+
 
 (TBD)
 
