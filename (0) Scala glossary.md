@@ -1,4 +1,4 @@
-2025-04-13: work in progress
+2025-04-14: work in progress
 
 # Glossary, symbols and names
 
@@ -41,6 +41,8 @@ $ scala = Scala code runner tool: https://docs.scala-lang.org/getting-started/in
 $ scala-cli = Scala shell, that is a command-line tool to interact with the Scala language: https://scala-cli.virtuslab.org/
 
 $ scalac = Scala compiler: https://docs.scala-lang.org/overviews/compiler-options/index.html
+
+Scala,ja = a compiler to write Scala code that runs in browsers, Node.js, and serverless environments: https://www.scala-js.org/
 
 Vite = frontend build tool for web applications: https://vite.dev/ 
 
