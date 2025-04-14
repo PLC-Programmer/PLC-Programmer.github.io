@@ -26,7 +26,7 @@ _v18.19.1_
 
 ### Build the default demo project with the sbt
 
-Run in your project root directory:
+Run in a parent directory of the new project root directory:
 
 _$ sbt new_
 
