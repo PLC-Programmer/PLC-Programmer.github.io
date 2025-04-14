@@ -1,8 +1,6 @@
 2025-04-14: work in progress
 
-Spoler alert: this use case has practically no value for me because so far I couldn't find a solution for this open point described below:
-
-[How to read from the console when executing JavaScript on node.js?](#how-to-read-from-the-console-when-executing-javascript-on-nodejs)
+Spoler alert: this use case has practically no value for me because so far I couldn't find a solution for this open point described below: [How to read from the console when executing JavaScript on node.js?](#how-to-read-from-the-console-when-executing-javascript-on-nodejs)
 
 <br/>
 
@@ -157,7 +155,9 @@ _libraryDependencies += "org.typelevel" **%%%** "cats-effect" % "3.6.1"_
 
 See from here: https://www.scala-js.org/doc/project/linking-errors.html
 
-You can look up details of the _**scala.scalajs.js**_ package from here: https://javadoc.io/doc/org.scala-js/scalajs-library_2.12/latest/scala/scalajs/js/index.html
+#### the scala.scalajs.js package
+
+The scala.scalajs.js package is for "Types, methods and values for interoperability with JavaScript libraries."; see officially from here: https://javadoc.io/doc/org.scala-js/scalajs-library_2.12/latest/scala/scalajs/js/index.html
 
 <br/>
 
