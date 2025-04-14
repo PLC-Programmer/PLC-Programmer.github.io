@@ -59,6 +59,8 @@ Now in the project root directory do:
 
 _$ sbt_
 
+_sbt:scala_to_js_on_nodejs>_
+
 _sbt:scala_to_js_on_nodejs> compile_
 
 …
@@ -74,6 +76,8 @@ _sbt:scala_to_js_on_nodejs> **fastLinkJS**_
 See also from here: https://www.scala-js.org/doc/project/building.html
 
 <br/>
+
+Now run this app:
 
 _sbt:scala_to_js_on_nodejs> run_
 
