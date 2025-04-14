@@ -1,6 +1,6 @@
 2025-04-14: work in progress
 
-Spoler alert: this use case has practically no value for me because so far I couldn't find a solution for this open point described below: [How to read from the console when executing JavaScript on node.js?](#how-to-read-from-the-console-when-executing-javascript-on-nodejs)
+**Spoler alert**: this use case has practically no value for me because so far I couldn't find a solution for this open point described below: [How to read from the console when executing JavaScript on node.js?](#how-to-read-from-the-console-when-executing-javascript-on-nodejs)
 
 <br/>
 
@@ -163,9 +163,9 @@ The _scala.scalajs.js_ package is for "Types, methods and values for interoperab
 
 <br/>
 
-### How to read from the console when executing JavaScript on node.js?
+## How to read from the console when executing JavaScript on node.js?
 
-Often I like some **user interaction** with a computer program and so I tried hard - but in vain so far - to write a more "active" Scala to JavaScript-program, which is then being executed by node.js.
+Often I like some **user interaction** with a computer program on the console and so I tried hard - but in vain so far - to write a more "active" Scala to JavaScript-program, which is then being executed by node.js.
 
 I did't have these kind of problems when doing so with Scala programs for the JVM (Java Virtual Machine) or as "Scala native" apps.
 
@@ -196,7 +196,7 @@ Like this for example:
     }
 ```
 
-This (part of a) program runs without any problems in a Windows of Linux Terminal.
+This (part of a) program runs without any problems in a Windows or Linux Terminal.
 
 However, I was't able to conceive Scala code that can do the same - or something similar - as a JavaScript program (for node.js).
 
@@ -204,11 +204,13 @@ The very best I got so far is this:
 
 (TBD)
 
-What I'm specifically missing is a working example (in Scala 3) which is handling more than one "IO stream" since I want to accomplish in the end is a dialog between computer and user.
+<br/>
 
-It looks like that there's no much support in the Scala ecosystem to support this.
+What I'm specifically **missing is a working example (in Scala 3)** which is handling more than one "IO stream" since what I want to accomplish finally is a dialog between computer and user.
 
-For Example look from here: [Cats Effect 3.x -- Console](https://typelevel.org/cats-effect/docs/std/console)
+It looks like that there's not much support in the Scala ecosystem for this.
+
+For example look at here: [Cats Effect 3.x -- Console](https://typelevel.org/cats-effect/docs/std/console)
 
 _Console provides common methods to write to and read from the standard console. Suited only for extremely simple console input and output, ..._
 
@@ -218,8 +220,8 @@ _**Scala.JS**_
 
 _readLine is not implemented for Scala.js. On Node.js consider using **fs2.io.stdin**._
 
-fs2 is a different library for "Functional, effectful, concurrent streams for Scala." (https://fs2.io/#/)
-and using method _fs2.io.stdinUtf8[IO]()_ inside an _object cats_effect3_io_example extends IOApp.Simple:_ context or similar (see code from above) was only a very tiny step towards a potentially working solution, if any.
+fs2 is a different library for "Functional, effectful, concurrent streams for Scala" (https://fs2.io/#/)
+and using method _fs2.io.stdinUtf8\[IO\]()_ inside an _object cats_effect3_io_example extends IOApp.Simple:_ or something similar (see code from above) was only a very tiny step towards a potentially working solution, if any.
 
 
 
