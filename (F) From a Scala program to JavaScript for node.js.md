@@ -165,9 +165,63 @@ The _scala.scalajs.js_ package is for "Types, methods and values for interoperab
 
 ### How to read from the console when executing JavaScript on node.js?
 
+Often I like some **user interaction** with a computer program and so I tried hard - but in vain so far - to write a more "active" Scala to JavaScript-program, which is then being executed by node.js.
 
+I did't have these kind of problems when doing so with Scala programs for the JVM (Java Virtual Machine) or as "Scala native" apps.
+
+Like this for example:
+
+```
+    var N_CHAR = 12
+    var answer = false
+    var answer_str = ""
+    while !answer do {
+      N_CHAR = 12
+      var N_CHAR_STR = N_CHAR.toString
+      print(f"\n\nAre $N_CHAR%s printable chars OK? 'y' or another integer number >= 8: ")
+      answer_str = scala.io.StdIn.readLine()
+      if answer_str == "y" then
+        answer = true
+      else
+        try
+          N_CHAR = answer_str.toInt
+          if N_CHAR < 8 then
+            print("enter an integer number >= 8 or 'y'")
+          else
+            answer = true
+        catch
+          // Exception in thread "main" java.lang.NumberFormatException: For an arbitrary input string like "sdaf"
+          case ex: NumberFormatException =>
+            print("enter an integer number >= 8 or 'y'")
+    }
+```
+
+This (part of a) program runs without any problems in a Windows of Linux Terminal.
+
+However, I was't able to conceive Scala code that can do the same - or something similar - as a JavaScript program (for node.js).
+
+The very best I got so far is this:
 
 (TBD)
+
+What I'm specifically missing is a working example (in Scala 3) which is handling more than one "IO stream" since I want to accomplish in the end is a dialog between computer and user.
+
+It looks like that there's no much support in the Scala ecosystem to support this.
+
+For Example look from here: [Cats Effect 3.x -- Console](https://typelevel.org/cats-effect/docs/std/console)
+
+_Console provides common methods to write to and read from the standard console. Suited only for extremely simple console input and output, ..._
+
+At the end of this page the authors write:
+
+_**Scala.JS**_
+
+_readLine is not implemented for Scala.js. On Node.js consider using **fs2.io.stdin**._
+
+fs2 is a different library for "Functional, effectful, concurrent streams for Scala." (https://fs2.io/#/)
+and using method _fs2.io.stdinUtf8[IO]()_ inside an _object cats_effect3_io_example extends IOApp.Simple:_ context or similar (see code from above) was only a very tiny step towards a potentially working solution, if any.
+
+
 
 <br/>
 
