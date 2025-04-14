@@ -14,7 +14,7 @@
 
 When you come from the Python world etc, you are used to the semantics of having the loop only running like: 0,1,2,... , RUNS - 1 (inclusively)
 
-5/ [How to read from the console when executing JavaScript on node.js and starting with a Scala program? An open issue.](https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(F)%20From%20a%20Scala%20program%20to%20JavaScript%20for%20node.js.md#how-to-read-from-the-console-when-executing-javascript-on-nodejs-and-starting-with-a-scala-program-an-open-issue)
+5/ [How to read from the console when executing JavaScript on node.js?](https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(F)%20From%20a%20Scala%20program%20to%20JavaScript%20for%20node.js.md#how-to-read-from-the-console-when-executing-javascript-on-nodejs)
 
 <br/>
 
