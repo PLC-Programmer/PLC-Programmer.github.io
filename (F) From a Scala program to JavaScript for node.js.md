@@ -221,8 +221,6 @@ _readLine is not implemented for Scala.js. On Node.js consider using **fs2.io.st
 fs2 is a different library for "Functional, effectful, concurrent streams for Scala" (https://fs2.io/#/)
 and using method _fs2.io.stdinUtf8\[IO\]()_ inside an _object cats_effect3_io_example extends IOApp.Simple:_ or something similar (see code from above) was only a very tiny step towards a potentially working solution, if any.
 
-
-
-<br/>
+However, it's not my intentation to make something bigger, like a **client-server application** (client for the user, server for the computer), for a simple dialog between computer and user.
 
 ##_end
