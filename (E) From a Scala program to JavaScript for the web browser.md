@@ -34,9 +34,9 @@ Here take option _m) scala-js/vite.g8 - A Scala.JS + Vite project_
 
 As usual just enter the [m] key here, do not press [ENTER] at this, or any other option!!
 
-name: press [ENTER] to accept this demo project name "scalajs-vite-example"
+_name_: press [ENTER] to accept this demo project name "scalajs-vite-example"
 
-use_yarn: press [ENTER] to use yarn
+_use_yarn_: press [ENTER] to use yarn
 
 ...
 _.\Template applied in Template applied in ... ./scalajs-vite-example_
