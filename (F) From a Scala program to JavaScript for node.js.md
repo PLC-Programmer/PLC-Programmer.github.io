@@ -12,13 +12,13 @@ Start a new sbt project in a parent directory of the later project root director
 
 _$ sbt new_
 
-Again choose **option m)** (see from here: https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(E)%20From%20a%20Scala%20program%20to%20JavaScript%20for%20the%20web%20browser.md#build-the-default-demo-project-with-the-sbt)
+Again, choose **option m)** (see also from here: [Build the default demo project with the sbt](https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(E)%20From%20a%20Scala%20program%20to%20JavaScript%20for%20the%20web%20browser.md#build-the-default-demo-project-with-the-sbt) )
 
 and enter _scala_to_js_on_nodejs_ as the project name for example.
 
 Rename sub directory _./src/main/scala/example_ to _./src/main/scala/main_ and change _example_ to _main_ in the _build.sbt_ configuration file too (just to get away from term "example").
 
-Change application source code file _Main.scala_ to this, which is the **real change** compared to use case (E) for the web browser (https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(E)%20From%20a%20Scala%20program%20to%20JavaScript%20for%20the%20web%20browser.md#e-from-a-scala-program-to-javascript-for-the-web-browser):
+Change application source code file _Main.scala_ to this, which is the **real change** compared to use case [(E) From a Scala program to JavaScript for the web browser](https://github.com/PLC-Programmer/PLC-Programmer.github.io/blob/main/(E)%20From%20a%20Scala%20program%20to%20JavaScript%20for%20the%20web%20browser.md#e-from-a-scala-program-to-javascript-for-the-web-browser):
 
 ```
 object Main {
@@ -28,9 +28,9 @@ object Main {
 }
 ```
 
-See also from: https://www.scala-js.org/doc/project/building.html
+See also from here: https://www.scala-js.org/doc/project/building.html
 
-In the project root directory change _build.sbt_ like this:
+In the project root directory change configuration file _build.sbt_ like this:
 
 ```
 …
@@ -43,9 +43,9 @@ In the project root directory change _build.sbt_ like this:
 …
 ```
 
-You can delete line _libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "2.4.0",_ becasue it's not needed here, only in a web app.
+You can delete line _libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "2.4.0",_ because it's not needed here, only in a web app.
 
-Change plugins.sbt in _./project_ directory to:
+In config file _plugins.sbt_ in the _./project_ directory add this line:
 
 ```
 addSbtPlugin("org.scala-js" % "sbt-scalajs" % "1.18.2")
@@ -60,13 +60,18 @@ Now in the project root directory do:
 _$ sbt_
 
 _sbt:scala_to_js_on_nodejs> compile_
+
 …
+
 _[success] …_
-sbt:scala_to_js_on_nodejs> fastLinkJS
+
+_sbt:scala_to_js_on_nodejs> **fastLinkJS**_
+
 …
+
 [success] …
 
-See also from: https://www.scala-js.org/doc/project/building.html
+See also from here: https://www.scala-js.org/doc/project/building.html
 
 <br/>
 
@@ -78,19 +83,21 @@ _**Hello world!**_
 
 _[success] Total time: 0 s, completed Apr 13, 2025, 1:09:15 PM_
 
-_sbt:scala_to_js_on_nodejs> _
+_sbt:scala_to_js_on_nodejs>_
 
 <br/>
 
 You can find the transpiled JavaScript file in this directory:
 
-_./<project dir>/scala_to_js_on_nodejs/target/scala-3.2.2/scala_to_js_on_nodejs-fastopt/main.js_
+_./scala_to_js_on_nodejs/target/scala-3.6.4/scala_to_js_on_nodejs-fastopt/main.js_
 
 Execute this JavaScript code on node.js like this: _**$ node main.js**_
 
 _**Hello world!**_
 
-Of course this can be done also in other directories, when _main.js_ has been copied there and maybe, as in this case, being renamed to _scala_to_js_on_nodejs.js_ for example:
+<br/>
+
+Of course this can be done also in other directories, when _main.js_ has been copied there and maybe, as in this case, being renamed to a more descriptive name like _scala_to_js_on_nodejs.js_ for example:
 
 _$ mv main.js scala_to_js_on_nodejs.js_
 
