@@ -1,7 +1,3 @@
-2025-04-12: work in progress
-
-<br/>
-
 # (H) Tips for working with the sbt (simple build tool)
 
 ### More detailed compilation warnings
