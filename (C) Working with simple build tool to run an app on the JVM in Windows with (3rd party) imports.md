@@ -1,5 +1,3 @@
-2025-04-12: work in progress
-
 # (C) Working with simple build tool to run an app on the JVM in Windows with (3rd party) imports
 
 Open the Windows command prompt ("cmd.exe"): ...\> 
