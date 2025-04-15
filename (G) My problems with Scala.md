@@ -1,10 +1,12 @@
-2025-04-14: work in progress
-
 # (G) My problems with Scala
 
 1/ Scala source code: does a character or string have symbolic or literal meaning?
 
-(TBD: example)
+```
+import java.io._  // for FileWriter etc.
+...
+    val path1: os.Path = os.pwd / file_name  // '/' is part of path!
+```
 
 2/ Scala source code: do the keywords _val_ and _var_ refer to the immutability and mutability, respectively, of the related objects or the values inside these objects?
 
