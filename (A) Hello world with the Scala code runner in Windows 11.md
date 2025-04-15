@@ -1,5 +1,3 @@
-2025-04-08: work in progress
-
 Direct jump to [(A) Hello world with the Scala code runner in Windows 11 (and Ubuntu 24 LTS)
 ](#a-hello-world-with-the-scala-code-runner-in-windows-11-and-ubuntu-24-lts)
 
