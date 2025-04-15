@@ -1,5 +1,3 @@
-2025-04-08: work in progress
-
 # (B) Compile Scala source code "directly" to run on the Java Virtual Machine (JVM)
 
 Again, have a dedicated project (root) directory for this source code file, named _hello_world_for_java.scala_:
