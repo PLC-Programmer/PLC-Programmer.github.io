@@ -1,5 +1,3 @@
-2025-04-14: work in progress
-
 **Spoler alert**: this use case has practically no value for me because so far I couldn't find a solution for this open point described below: [How to read from the console when executing JavaScript on node.js?](#how-to-read-from-the-console-when-executing-javascript-on-nodejs)
 
 <br/>
@@ -200,7 +198,41 @@ This (part of a) program runs without any problems in a Windows or Linux Termina
 
 The very best I got so far is this:
 
-(TBD)
+```
+import cats.effect.{IO, IOApp, ExitCode}
+import fs2.io._  // for stdinUtf8 
+import fs2.Stream
+import fs2.text
+
+object cats_effect3_io_example extends IOApp.Simple:
+  var answer = ""
+
+  def readNext: Stream[IO, String] = stdinUtf8[IO](1)
+      .through(text.lines)
+      .take(1)  // emits the first element of this stream
+        
+  def prnInput(line: String): IO[Unit] =
+      IO.println(s"your input was: $line")
+      answer = line
+  
+  val run: IO[Unit] = for {
+    _ <- IO.println("enter a integer number from 1 to 99 or 'q' for quitting:")
+    _ <- IO[answer]
+    i <- readNext.parEvalMap(1)(prnInput).compile.drain
+  } yield ExitCode.Success
+```
+
+This program runs like this:
+
+_./cats_effect3_io_example/target/scala-3.6.4/cats_effect3_io_example-fastopt$ node main_
+
+_enter a integer number from 1 to 99 or 'q' for quitting:_
+
+_56_
+
+_your input was: 56_
+
+_./cats_effect3_io_example/target/scala-3.6.4/cats_effect3_io_example-fastopt$_
 
 <br/>
 
@@ -208,7 +240,7 @@ What I'm specifically **missing is a working example (in Scala 3)** which is han
 
 It looks like that there's not much support in the Scala ecosystem for this.
 
-For example look at here: [Cats Effect 3.x -- Console](https://typelevel.org/cats-effect/docs/std/console)
+For example look at this: [Cats Effect 3.x -- Console](https://typelevel.org/cats-effect/docs/std/console)
 
 _Console provides common methods to write to and read from the standard console. Suited only for extremely simple console input and output, ..._
 
@@ -222,5 +254,13 @@ fs2 is a different library for "Functional, effectful, concurrent streams for Sc
 and using method _fs2.io.stdinUtf8\[IO\]()_ inside an _object cats_effect3_io_example extends IOApp.Simple:_ or something similar (see code from above) was only a very tiny step towards a potentially working solution, if any.
 
 However, it's not my intentation to make something bigger, like a **client-server application**, for a simple dialog between computer and user.
+
+Anyhow, here's a list of links with more background information:
+
+- https://typelevel.org/cats-effect/docs/getting-started
+- https://github.com/slouc/concurrency-in-scala-with-ce
+- https://gist.github.com/BalmungSan/d4a5d524cab529e18fbf05f100ec3296
+- https://fs2.io/#/getstarted/example
+- https://medium.com/@geethana.kattar/building-reactive-applications-with-cats-effect-and-fs2-in-scala-e427703887ab
 
 ##_end
